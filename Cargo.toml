@@ -7,11 +7,37 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-smol = "0.1.8"
-http-service = "0.5.0"
-http-service-hyper = { git = "https://github.com/Nemo157/http-service-hyper", default-features = false }
-http-types = "1.2.0"
-anyhow = "1.0.31"
-thiserror = "1.0.18"
-displaydoc = "0.1.6"
-futures = { version = "0.3.5", default-features = false }
+anyhow.default-features = false
+anyhow.features = ["std"]
+anyhow.version = "1.0.31"
+
+displaydoc.default-features = false
+displaydoc.version = "0.1.6"
+
+futures-core.default-features = false
+futures-core.version = "0.3.5"
+
+futures-io.default-features = false
+futures-io.version = "0.3.5"
+
+http.default-features = false
+http.version = "0.2.1"
+
+hyper.default-features = false
+hyper.version = "0.13.5"
+
+pin-project-lite.default-features = false
+pin-project-lite.version = "0.1.5"
+
+smol.default-features = false
+smol.version = "0.1.8"
+
+thiserror.default-features = false
+thiserror.version = "1.0.18"
+
+tokio-util.default-features = false
+tokio-util.features = ["compat"]
+tokio-util.version = "0.3.1"
+
+tower-service.default-features = false
+tower-service.version = "0.3.0"
